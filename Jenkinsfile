@@ -26,7 +26,7 @@ pipeline {
             steps {
                 script {
                     try {
-                        bat '"D:\\lab4SP\\matiichyn-test\\x64\Debug\\matiichyn-test.exe"'                    
+                        bat '"D:\\lab4SP\\matiichyn-test\\x64\\Debug\\matiichyn-test.exe"'                    
                     } catch (Exception e){
                         echo "Test error: ${e.message}"
                         currentBuild.result = 'FAILURE'
